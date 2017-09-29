@@ -1,14 +1,51 @@
-.grid div {
-  background: skyblue;
-  border: 2px solid grey;
+.white {
+  background-color: white;
+}
+.yellow {
+  background-color: yellow;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
 }
 
-
-/* Grid Styles */
-.grid {
-  max-width: 800px;
+/* Code Below */
+.mondrian {
+  width: 800px;
   display: grid;
-  grid-template-columns: 200px auto 200px;
-  grid-template-rows: 100px 200px;
- 
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 200px 200px 100px 100px;
+  grid-gap: 15px;
+  background-color: black;
+  border: 15px solid black;
+  border-bottom: 0px;
+}
+.two, .fifthteen, .nineteen {
+  grid-column: 2 / 4;
+}
+.three, .nine {
+  grid-column: 4 / 6;
+}
+.four {
+  grid-column: 6 / 9;
+}
+.eight {
+  grid-column: 2 / 4;
+}
+.eleven {
+  grid-column: 7 / 9;
+}
+.thirteen, .fourteen {
+ grid-row: span 2;
+}
+.nineteen {
+  grid-row: 4;
+}
+.sixteen, .twenty {
+  grid-column: 4 / 8;
+}
+.twentyone {
+  grid-column: 8 / 10;
 }
